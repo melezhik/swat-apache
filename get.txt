@@ -1,0 +1,3 @@
+200 OK
+regexp: Server: Apache
+generator: [ config()->{apache}->{welcome_message} ]

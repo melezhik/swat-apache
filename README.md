@@ -9,14 +9,33 @@
 * verify that given string exists at landing page
 
 
-# INSTALL
+# Usage
+
+# Developers 
+
+For tests developers
+
+    # install tests and dependencies
+
+    yum install curl
+    cpanm Carton # you will need a Carton
+    git clone https://github.com/melezhik/swat-apache.git
+    cd swat-apache
+    carton
+    carton exec swat
+
+# IT guys 
+
+For those who just want to run test suite
+
+    # install tests as swat test suite
 
     cpanm Sparrow # you need Sparrow manager
     yum install curl
     sparrow index update
     sparrow plg install swat-apache # you need test suite swat-apache
 
-# Running tests
+    # running tests
 
     sparrow project create  apache
     sparrow check   add     apache apache-test
@@ -43,7 +62,8 @@
     All tests successful.
     Files=1, Tests=4,  0 wallclock secs ( 0.06 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.17 CPU)
     Result: PASS
-    
+
+
 # Author
 
 [Alexey Melezhik](mailto:melezhik@gmail.com)

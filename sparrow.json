@@ -2,6 +2,6 @@
     "version": "0.0.1",
     "name": "swat-apache",
     "engine": "swat", 
-    "description" : "integration tests apache mysql server",
+    "description" : "integration tests for apache server",
     "url": "https://github.com/melezhik/swat-apache.git"
 }
